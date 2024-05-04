@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Request Certificate</title>
+    <link rel="stylesheet" href="../styles/optionsForm.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="greeting">Welcome, Student!</div>
+      <button class="logout-btn">Logout</button>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <div class="form-container">
+        <h1>Request Certificate</h1>
+        <form id="certificateForm">
+          <div class="form-group">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required />
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required />
+          </div>
+          <div class="form-group">
+            <label for="universityID">University ID:</label>
+            <input type="text" id="universityID" name="universityID" required />
+          </div>
+          <div class="form-group">
+            <label for="university">University:</label>
+            <input type="text" id="university" name="university" required />
+          </div>
+          <div class="form-group">
+            <label for="course">Course:</label>
+            <input type="text" id="course" name="course" required />
+          </div>
+          <button type="submit">Request Certificate</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

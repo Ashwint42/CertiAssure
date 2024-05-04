@@ -51,7 +51,7 @@ body {
 
 .main-content {
   padding: 20px;
-  max-width: 1200px;
+  max-width: 800px; /* Adjust the max-width of the main content */
   margin: 0 auto;
 }
 
@@ -60,43 +60,34 @@ body {
   margin-bottom: 30px;
 }
 
-.roles {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+.form-group {
+  margin-bottom: 20px;
 }
 
-.cards {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  max-width: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 20px;
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
-.cards:hover {
-  transform: translateY(-5px);
-  border: 1px solid rgb(72, 72, 72);
+.form-group input[type="text"],
+.form-group input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.cards h4 {
-  color: var(--text-color);
-  font-size: 20px;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-svg {
-  width: 100px;
-  height: 200px;
-}
-
-.option-title {
-  text-decoration: none;
+button[type="submit"]:hover {
+  background-color: darken(var(--primary-color), 10%);
 }
